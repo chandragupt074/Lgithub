@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-    int arr[] = {1,0,1,0,1,0,1,0,0,1,0};
+    int arr[] = {1,0,1,0,1,0,1,0,0,1,0,0};
     int n = sizeof(arr) / sizeof(arr[0]);
       
 //     int zeros = 0;
@@ -31,27 +31,27 @@ int main() {
 
 
 
-// int start =0;
-// int end = n-1;
-// while(start<end){
-//     if(arr[start]==0) start++;
-//     else if(arr[end]==1) end--;
-//     else {
-//         int temp= arr[end];
-//         arr[end] = arr[start];
-//         arr[start] = temp;
-//          start++;
-//     end--;
-//     }
+int start =0;
+int end = n-1;
+while(start<end){
+    if(arr[start]==0) start++;
+    else if(arr[end]==1) end--;
+    else {
+        int temp= arr[end];
+        arr[end] = arr[start];
+        arr[start] = temp;
+         start++;
+    end--;
+    }
    
-// }
+}
 
-//  for(int i=0;i<n;i++){
-//         cout<<arr[i];
-//       }
+ for(int i=0;i<n;i++){
+        cout<<arr[i];
+      }
 
 
-int arr[]={2,0,2,1,1,0};
+// int arr[]={2,0,2,1,1,0};
 }
 
 
